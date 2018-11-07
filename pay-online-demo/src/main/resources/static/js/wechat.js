@@ -6,7 +6,7 @@ $(function () {
 
 function getQrCode() {
     $.ajax({
-        url: url+"/version1/pay/pay/qrCode",
+        url: url+"/version1/pay/wechat/qrCode",
         type: "post",
         dataType: "json",
         // async: false,
@@ -14,8 +14,7 @@ function getQrCode() {
         success: function (data) {
             console.log(data);
             if(data.success === true){
-                jQuery('#output').qrcode({width: 120,height: 120,background: "#ffffff",foreground: "#000000",text: encodeURI(data.alipay_url)});
-                jQuery('#output1').qrcode({width: 120,height: 120,background: "#ffffff",foreground: "#000000",text: encodeURI(data.wechat_url)});
+                jQuery('#output').qrcode({width: 120,height: 120,background: "#ffffff",foreground: "#000000",text: encodeURI(data.url)});
             } else{
                 alert("")
                 return false;
@@ -36,8 +35,9 @@ function pay() {
             if(data.success === true){
                 $("#btn_div").remove();
                 $("#form_div").append(data.content);
+
             } else{
-                alert("");
+                alert("")
                 return false;
             }
         }

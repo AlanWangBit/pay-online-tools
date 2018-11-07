@@ -25,13 +25,13 @@ import java.util.Map;
  * @date 2018/11/5.
  */
 @RestController
-@RequestMapping("/version1/pay/alipay")
-public class AlipayController {
+@RequestMapping("/version1/pay/wechat")
+public class WechatController {
 
     private AlipaymentSandboxStrategy alipaymentHzStrategy;
 
     @Autowired
-    public AlipayController(AlipayConfigModel model) {
+    public WechatController(AlipayConfigModel model) {
         alipaymentHzStrategy = new AlipaymentSandboxStrategy(model);
     }
 
@@ -43,8 +43,7 @@ public class AlipayController {
     public Object qrCode() {
         Map<String, Object> map = new HashMap<>(3);
         map.put("success", true);
-        map.put("alipay_url", "http://captain.natappvip.cc/version1/pay/web/pay/info?invoiceId=AI20181105123645685");
-        map.put("wechat_url", "http://captain.natappvip.cc/version1/pay/web/wechat/info?invoiceId=AI20181105123645685");
+        map.put("url", "http://captain.natappvip.cc/version1/pay/web/wechat/info?invoiceId=AI20181105123645685");
 
         return map;
     }

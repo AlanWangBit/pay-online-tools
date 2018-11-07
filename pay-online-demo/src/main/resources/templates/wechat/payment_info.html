@@ -5,7 +5,7 @@
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
     <link rel="stylesheet" href="https://as.alipayobjects.com/g/antui/antui/10.0.18/dpl/??antui.css,widget/notice.css" />
-    <title>支付宝</title>
+    <title>微信支付</title>
 </head>
 <body>
 <input type="hidden" id="invoiceId" th:value="${invoiceId}"/>
@@ -20,6 +20,16 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.qrcode@1.0.3/jquery.qrcode.min.js"></script>
-<script th:src="@{/js/index.js}"></script>
+<script th:src="@{/js/wechat.js}"></script>
+<script>
+    var tip_url = 'http://www.captain.natappvip.cc/';
+
+    var url0 = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx1348b432b6ae9f80&";
+    var suffic_url = "&response_type=code&scope=snsapi_base#wechat_redirect";
+    var redirect_uri = "redirect_uri="+tip_url+"/version1/pay/web/wechat/wx_redirect?invoiceId=AI123456789";
+    var url = url0 + encodeURI(redirect_uri) + suffic_url;
+    console.log(url);
+    window.location.href = url;
+</script>
 </body>
 </html>

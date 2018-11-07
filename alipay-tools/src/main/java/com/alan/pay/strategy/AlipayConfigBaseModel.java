@@ -1,7 +1,7 @@
-package com.alan.alipay.strategy;
+package com.alan.pay.strategy;
 
 /**
- * @author Juzi
+ * @author Alan Wang
  * @Date 2018/11/6.
  */
 public class AlipayConfigBaseModel {

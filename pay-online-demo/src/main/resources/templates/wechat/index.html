@@ -4,22 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
-    <link rel="stylesheet" href="https://as.alipayobjects.com/g/antui/antui/10.0.18/dpl/??antui.css,widget/notice.css" />
-    <title>支付宝</title>
+    <title>index</title>
+
 </head>
 <body>
-<input type="hidden" id="invoiceId" th:value="${invoiceId}"/>
-<div>
-    支付金额：￥100000
-</div>
-<div id="btn_div">
-    <button id="J_btn" class="btn btn-default" onclick="pay()">支付</button>
-</div>
-<div id="form_div">
-
+<div id="output" style="margin-top: 15px; float: left;">
+    <div id="label_alipay" class="hide" style="text-align: center;padding: 20px;font-size: 16px;font-weight: bold;">微信支付</div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.qrcode@1.0.3/jquery.qrcode.min.js"></script>
-<script th:src="@{/js/index.js}"></script>
+<script th:src="@{/js/wechat.js}"></script>
 </body>
 </html>

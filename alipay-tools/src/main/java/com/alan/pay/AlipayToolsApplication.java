@@ -1,4 +1,4 @@
-package com.alan.alipay;
+package com.alan.pay;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

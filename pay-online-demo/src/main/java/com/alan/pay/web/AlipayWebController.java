@@ -1,7 +1,6 @@
 package com.alan.pay.web;
 
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
  * @Date 2018/11/5.
  */
 @RestController
-@RequestMapping("/v1/web/alipay")
+@RequestMapping("/version1/pay/web/alipay")
 public class AlipayWebController {
 
     @RequestMapping({"/", "/index"})

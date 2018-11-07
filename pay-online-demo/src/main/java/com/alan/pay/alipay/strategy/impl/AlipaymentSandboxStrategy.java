@@ -1,7 +1,7 @@
 package com.alan.pay.alipay.strategy.impl;
 
-import com.alan.alipay.strategy.AlipayConfig;
-import com.alan.alipay.strategy.AlipayStrategy;
+import com.alan.pay.strategy.AlipayConfig;
+import com.alan.pay.strategy.AlipayStrategy;
 import com.alan.pay.alipay.strategy.AlipayConfigModel;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.request.AlipayTradeRefundRequest;

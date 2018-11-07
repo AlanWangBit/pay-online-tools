@@ -1,4 +1,4 @@
-package com.alan.alipay;
+package com.alan.pay;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

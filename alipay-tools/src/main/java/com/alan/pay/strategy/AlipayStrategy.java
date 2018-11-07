@@ -1,4 +1,4 @@
-package com.alan.alipay.strategy;
+package com.alan.pay.strategy;
 
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.request.AlipayTradeFastpayRefundQueryRequest;

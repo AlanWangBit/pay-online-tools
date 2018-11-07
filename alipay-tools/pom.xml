@@ -44,10 +44,10 @@
 
 		<!--<dependency>
 			<groupId>com.aplipay.api</groupId>
-			<artifactId>alipay-sdk-java20170307171631</artifactId>
+			<artifactId>pay-sdk-java20170307171631</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/resources/libs/alipay-sdk-java20170307171631.jar</systemPath>
+			<systemPath>${project.basedir}/src/main/resources/libs/pay-sdk-java20170307171631.jar</systemPath>
 		</dependency>
 
 		<dependency>

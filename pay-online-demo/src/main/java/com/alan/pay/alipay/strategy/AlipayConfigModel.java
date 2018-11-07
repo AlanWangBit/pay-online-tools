@@ -1,6 +1,6 @@
 package com.alan.pay.alipay.strategy;
 
-import com.alan.alipay.strategy.AlipayConfigBaseModel;
+import com.alan.pay.strategy.AlipayConfigBaseModel;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
